@@ -10,6 +10,13 @@
 
 export default {
 	async fetch(request, env, ctx) {
+
+		let value = await env.TODO.get("to-do:123");
+		if (!value) {
+			console.log("No value found, setting to Hello World!");
+			await env.TODO.put("to-do:123", "Hello World!");
+		}
+
 		return new Response("Hello World!, from pre!!");
 	},
 };

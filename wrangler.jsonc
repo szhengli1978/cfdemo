@@ -13,7 +13,12 @@
 	"upload_source_maps": true,
 	"compatibility_flags": [
 		"nodejs_compat"
-	]
+	],
+
+	"kv_namespaces": [
+		{ "binding": "demo", "id": "4ed19a66132249018e018c6231fec2a5"}
+	],
+
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -36,7 +41,7 @@
 	 * Static Assets
 	 * https://developers.cloudflare.com/workers/static-assets/binding/
 	 */
-	// "assets": {  "directory": "./public/",  "binding": "ASSETS" }
+	 "assets": {  "directory": "./public/",  "binding": "ASSETS" }
 	/**
 	 * Service Bindings (communicate between multiple Workers)
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
