@@ -12,10 +12,10 @@ import { Hono } from 'hono'
 
 const app = new Hono()
 
-app.get('/', (c) => {
+app.get('/', async(c) => {
 
 	//c.env.demo.put("company", "urs corp");
-	const value = c.env.KV.get('place');
+	const value = await c.env.demo.get('place');
 	return c.text(value)
 })
 

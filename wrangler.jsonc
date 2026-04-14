@@ -16,7 +16,8 @@
 	],
 
 	"kv_namespaces": [
-		{ "binding": "demo", "id": "4ed19a66132249018e018c6231fec2a5"}
+		{ "binding": "demo", "id": "4ed19a66132249018e018c6231fec2a5" , "remote": true}
+
 	],
 
 	/**
