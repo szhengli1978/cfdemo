@@ -14,8 +14,9 @@ const app = new Hono()
 
 app.get('/', (c) => {
 
-	c.env.demo.put("company", "urs corp");
-	return c.text('Hello Hono!')
+	//c.env.demo.put("company", "urs corp");
+	const value = c.env.KV.get('place');
+	return c.text(value)
 })
 
 export default app
