@@ -14,7 +14,7 @@ const app = new Hono()
 
 app.get('/', (c) => {
 
-	c.env.demo.put("place", "suzhou-hono");
+	c.env.demo.put("company", "urs corp");
 	return c.text('Hello Hono!')
 })
 
