@@ -14,7 +14,7 @@ const app = new Hono()
 
 app.get('/', async(c) => {
 
-	await c.env.demo.put("company", "urs corp");
+	await c.env.demo.put("company", "king");
 	const value = await c.env.demo.get('company');
 
 	return c.text(value)
